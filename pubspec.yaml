@@ -33,6 +33,7 @@ dependencies:
   provider: ^4.0.1
   url_launcher: ^5.4.1
   webview_flutter: 0.3.19+5
+  camera: ^0.5.7+4
 
 dev_dependencies:
   flutter_test:

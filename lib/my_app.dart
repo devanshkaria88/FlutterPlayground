@@ -4,6 +4,7 @@ import 'package:flutter_playground/ui_ux/home_page/my_home_page.dart';
 import 'package:flutter_playground/values/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'ui/Camera/Camera_Home.dart';
 
 import 'store/theme_store.dart';
 import 'ui_ux/home_page/my_home_page_store.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessObserverWidget {
       debugShowCheckedModeBanner: false,
       home: Provider(
         create: (context) => MyHomePageStore()..initList(),
-        child: MyHomePage(title: Strings.appName),
+        child: Camerahome(),
+//        child: MyHomePage(title: Strings.appName),
       ),
       routes: DefaultRoutes.routes(),
     );
