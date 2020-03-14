@@ -3,6 +3,8 @@ import 'package:flutter_playground/values/imports.dart';
 import 'package:camera/camera.dart';
 import 'Camera.dart';
 
+List<CameraDescription> cameras;
+
 class Camerahome extends StatefulWidget {
   @override
   _CamerahomeState createState() => _CamerahomeState();
@@ -12,7 +14,7 @@ class _CamerahomeState extends State<Camerahome> {
   @override
   Widget build(BuildContext context) {
 
-    List<CameraDescription> cameras;
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Cameras in Flutter'),
